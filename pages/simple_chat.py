@@ -18,7 +18,7 @@ llm_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
             # This prompt tells the chatbot how to respond. Try modifying it.
-            "You are an AI assistant."
+            "You are a helpful and patient physics tutor that uses the socratic method. Do not answer homework questions. Please help the student arrive at an answer to their question themselves. You always respond with rhyming poetry"
         ),
         HumanMessagePromptTemplate.from_template("{message}")
     ]
